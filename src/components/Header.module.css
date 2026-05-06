@@ -14,6 +14,28 @@
   align-items: center;
 }
 
+/* Scrolled State */
+.scrolled {
+  padding: 0.5rem 1.5rem;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.scrolled .logo,
+.scrolled .nav,
+.scrolled .actions {
+  display: none !important;
+}
+
+.scrolled .logoContainer {
+  flex: none;
+  margin: 0 auto;
+}
+
+.scrolled .logoText {
+  height: 25px;
+}
+
 .logoLink {
   display: flex;
   align-items: center;
