@@ -17,7 +17,6 @@ export default function Footer() {
             alt="1ce Motorsport Full Logo" 
             className={`${styles.footerLogo} ${theme === 'dark' ? styles.logoInvert : ''}`} 
           />
-          <p className={styles.tagline}>Cool Runnings. Fast Racing.</p>
         </div>
 
         <div className={styles.linksSection}>
