@@ -1,0 +1,96 @@
+.footer {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  padding: 4rem 1.5rem 1.5rem 1.5rem;
+  margin-top: auto;
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.brandSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footerLogo {
+  height: 120px;
+  width: auto;
+  margin-bottom: 1rem;
+  transition: filter 0.3s ease;
+}
+
+.logoInvert {
+  filter: invert(1) brightness(1.5);
+}
+
+.tagline {
+  color: var(--text-secondary);
+  font-weight: 700;
+}
+
+.linksSection h4, .contactSection h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.linksSection nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.linksSection a {
+  color: var(--text-secondary);
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.linksSection a:hover {
+  color: var(--accent-blue);
+}
+
+.contactSection p {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.socials {
+  margin-top: 1.5rem;
+}
+
+.socials a {
+  color: var(--accent-dark);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.socials a:hover {
+  color: var(--accent-hover);
+}
+
+.footerBottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

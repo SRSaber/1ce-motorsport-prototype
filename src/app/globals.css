@@ -1,0 +1,56 @@
+:root {
+  /* Light Mode Variables */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F3F4F6;
+  --text-primary: #000000;
+  --text-secondary: #4B5563;
+  --border-color: #E5E7EB;
+  
+  /* Accent Colors */
+  --accent-blue: #14b8a6; /* Teal */
+  --accent-hover: #0d9488;
+  --accent-dark: #ef4444; /* Red */
+}
+
+[data-theme='dark'] {
+  /* Dark Mode Variables */
+  --bg-primary: #000000;
+  --bg-secondary: #111111;
+  --text-primary: #FFFFFF;
+  --text-secondary: #9CA3AF;
+  --border-color: #333333;
+  
+  --accent-blue: #14b8a6; /* Teal */
+  --accent-hover: #2dd4bf;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-inter), sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
