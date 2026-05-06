@@ -20,7 +20,7 @@ export default function CartDrawer() {
       {isCartOpen && <div className={styles.overlay} onClick={() => setIsCartOpen(false)} />}
       <div className={`${styles.drawer} ${isCartOpen ? styles.open : ''}`}>
         <div className={styles.header}>
-          <h2>YOUR CART</h2>
+          <h2>CART</h2>
           <button className={styles.closeBtn} onClick={() => setIsCartOpen(false)}>×</button>
         </div>
 
@@ -58,7 +58,7 @@ export default function CartDrawer() {
               <span>R {cartTotal.toFixed(2)}</span>
             </div>
             <Link href="/checkout" onClick={() => setIsCartOpen(false)} className={styles.checkoutBtn}>
-              PROCEED TO SECURE CHECKOUT
+              PROCEED TO CHECKOUT
             </Link>
           </div>
         )}

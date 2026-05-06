@@ -98,19 +98,56 @@
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+.burgerBtn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+@media (max-width: 900px) {
   .header {
-    flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
-  }
-  .nav {
-    margin: 1rem 0;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
   }
+  
+  .logoContainer {
+    flex: 1;
+  }
+  
+  .logo {
+    height: 60px; /* Scale down slightly on mobile */
+  }
+  
+  .logoText {
+    height: 30px;
+  }
+
+  .nav {
+    display: none;
+    width: 100%;
+    order: 3;
+    flex-direction: column;
+    margin: 1.5rem 0 0 0;
+    gap: 1.5rem;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+  }
+  
+  .navOpen {
+    display: flex;
+  }
+
   .actions {
-    margin: 0 auto;
+    margin: 0;
+  }
+  
+  .burgerBtn {
+    display: block;
   }
 }
